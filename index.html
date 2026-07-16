@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SteelPlow Domains | Premium Domain Registration & Hosting</title>
-    <!-- Tailwind CSS for modern styling -->
+    <title>SteelPlow Domains | Your Small Town Domain Registrar</title>
+    <!-- Tailwind CSS for modern, customizable styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for icons -->
+    <!-- FontAwesome for professional icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        steel: {
-                            50: '#f4f6f8',
-                            100: '#e7ebf0',
-                            600: '#4a5568',
-                            700: '#2d3748',
-                            800: '#1a202c',
-                            900: '#111827',
-                        },
-                        plow: {
-                            orange: '#dd6b20', /* A subtle rust/plow orange accent */
-                            orangeHover: '#c05621'
+                        // Core colors derived from the splogo-removebg-preview.png logo
+                        sp: {
+                            'blue-medium': '#0e7fe7', // The main, bright blue of the logo circle
+                            'blue-dark': '#072e5a', // For deep contrast and text
+                            'blue-pale': '#e1f0fc', // For background variations
+                            'gold': '#c0a368', // The accent gold/rust from the logo border and plow details
+                            'gold-hover': '#a68c56',
                         }
                     }
                 }
@@ -31,26 +27,27 @@
         }
     </script>
 </head>
-<body class="bg-steel-50 text-steel-900 flex flex-col min-screen justify-between min-h-screen">
+<body class="bg-white text-sp-blue-dark flex flex-col min-h-screen">
 
     <!-- Header / Navigation -->
-    <header class="bg-white border-b border-steel-100 sticky top-0 z-50 shadow-sm">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <!-- Logo & Brand -->
-            <a href="#" class="flex items-center gap-3">
-                <img src="splogo.png" alt="SteelPlow Domains Logo" class="h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';">
-                <!-- Fallback text logo if splogo.png isn't found -->
-                <span id="text-logo" class="hidden text-2xl font-black tracking-tight text-steel-800">
-                    Steel<span class="text-plow-orange">Plow</span> Domains
+    <header class="bg-white border-b border-sp-blue-pale sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <!-- Large Logo Link -->
+            <a href="#" class="flex items-center">
+                <!-- Pointing to the new logo filename and making it physically larger -->
+                <img src="splogo-removebg-preview.png" alt="SteelPlow Domains Logo" class="h-24 md:h-32 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';">
+                <!-- Fallback text logo -->
+                <span id="text-logo" class="hidden text-3xl font-extrabold tracking-tight text-sp-blue-dark ml-2">
+                    Steel<span class="text-sp-blue-medium">Plow</span> Domains
                 </span>
             </a>
 
             <!-- Contact & Social Header Links -->
-            <div class="flex items-center gap-6 text-sm font-medium text-steel-600">
-                <a href="tel:816-319-8559" class="hover:text-plow-orange transition-colors flex items-center gap-2">
-                    <i class="fa-solid fa-phone"></i> 816-319-8559
+            <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-base font-bold text-sp-blue-dark">
+                <a href="tel:816-319-8559" class="hover:text-sp-blue-medium transition-colors flex items-center gap-3">
+                    <i class="fa-solid fa-phone text-lg"></i> 816-319-8559
                 </a>
-                <a href="https://www.facebook.com/steelplowdomains" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 text-lg transition-colors" title="Follow us on Facebook">
+                <a href="https://www.facebook.com/steelplowdomains" target="_blank" rel="noopener noreferrer" class="hover:text-sp-blue-medium text-2xl transition-colors" title="Follow us on Facebook">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
             </div>
@@ -61,110 +58,110 @@
     <main class="flex-grow">
         
         <!-- Hero & Domain Search Section -->
-        <section class="bg-gradient-to-br from-steel-900 via-steel-800 to-steel-700 text-white py-16 px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+        <section class="bg-gradient-to-br from-sp-blue-dark via-sp-blue-medium to-sp-blue-dark text-white py-20 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight">
                     Carve Out Your Space Online
                 </h1>
-                <p class="text-lg md:text-xl text-steel-100 mb-8 max-w-2xl mx-auto">
-                    Search and secure premium domain names instantly through our trusted OpenSRS reseller portal.
+                <p class="text-lg md:text-xl text-sp-blue-pale mb-10 max-w-3xl mx-auto font-medium">
+                    "Your Small Town Domain Registrar." Search instantly and secure your perfect domain through our trusted, secure OpenSRS purchasing portal.
                 </p>
 
-                <!-- Search Form -->
-                <form id="domainSearchForm" class="bg-white p-2 rounded-lg shadow-xl flex flex-col md:flex-row gap-2 max-w-3xl mx-auto">
+                <!-- Search Form - Direct Redirect -->
+                <form id="domainSearchForm" class="bg-white p-3 rounded-xl shadow-2xl flex flex-col md:flex-row gap-3 max-w-4xl mx-auto border-4 border-sp-gold">
                     <div class="flex-grow relative flex items-center">
-                        <i class="fa-solid fa-globe text-steel-400 absolute left-4 text-lg"></i>
+                        <i class="fa-solid fa-globe text-sp-blue-medium absolute left-5 text-xl"></i>
                         <input 
                             type="text" 
                             id="domainInput"
                             placeholder="Enter your ideal domain (e.g., mybusiness.com)..." 
-                            class="w-full pl-11 pr-4 py-3 rounded-md text-steel-900 placeholder-steel-400 focus:outline-none focus:ring-2 focus:ring-plow-orange"
+                            class="w-full pl-14 pr-6 py-4 rounded-lg text-sp-blue-dark placeholder-sp-blue-medium placeholder-opacity-50 text-lg focus:outline-none focus:ring-4 focus:ring-sp-gold focus:ring-opacity-50"
                             required
                         >
                     </div>
                     <button 
                         type="submit" 
-                        class="bg-plow-orange hover:bg-plow-orangeHover text-white font-bold px-8 py-3 rounded-md transition-colors flex items-center justify-center gap-2"
+                        class="bg-sp-gold hover:bg-sp-gold-hover text-sp-blue-dark font-extrabold text-lg px-10 py-4 rounded-lg transition-colors flex items-center justify-center gap-3 shadow-lg"
                     >
-                        <span>Search Domain</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>Check Availability</span>
+                        <i class="fa-solid fa-search"></i>
                     </button>
                 </form>
                 
-                <p class="text-xs text-steel-300 mt-3">
-                    You will be securely redirected to our secure purchasing portal at buy.steelplow.net.
+                <p class="text-xs text-sp-blue-pale mt-4">
+                    You will be securely redirected to our management portal at buy.steelplow.net. Est. 2026.
                 </p>
             </div>
         </section>
 
         <!-- Features Grid -->
-        <section class="max-w-6xl mx-auto px-4 py-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 <!-- Feature 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-steel-100 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 rounded-lg bg-steel-100 text-plow-orange flex items-center justify-center text-xl font-bold mb-4">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-sp-blue-pale hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-sp-blue-pale text-sp-blue-medium flex items-center justify-center text-3xl font-bold mb-6">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Trusted OpenSRS Partner</h3>
-                    <p class="text-steel-600 text-sm leading-relaxed">
+                    <h3 class="text-2xl font-bold mb-3">Trusted OpenSRS Partner</h3>
+                    <p class="text-sp-blue-dark text-base leading-relaxed opacity-90">
                         As an official reseller, we provide world-class registry infrastructure, security, and stability for your web assets.
                     </p>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-steel-100 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 rounded-lg bg-steel-100 text-plow-orange flex items-center justify-center text-xl font-bold mb-4">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-sp-blue-pale hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-sp-blue-pale text-sp-blue-medium flex items-center justify-center text-3xl font-bold mb-6">
                         <i class="fa-solid fa-headset"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">Dedicated Support</h3>
-                    <p class="text-steel-600 text-sm leading-relaxed">
-                        Get direct, personalized assistance. We are here to help you manage, transfer, and configure your domains worry-free.
+                    <h3 class="text-2xl font-bold mb-3">Small Town Support</h3>
+                    <p class="text-sp-blue-dark text-base leading-relaxed opacity-90">
+                        Get direct, personalized assistance from a registrar that values community. We are here to help you manage, transfer, and configure your domains worry-free.
                     </p>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-steel-100 hover:shadow-md transition-shadow">
-                    <div class="w-12 h-12 rounded-lg bg-steel-100 text-plow-orange flex items-center justify-center text-xl font-bold mb-4">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-sp-blue-pale hover:shadow-xl transition-shadow text-center flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-sp-blue-pale text-sp-blue-medium flex items-center justify-center text-3xl font-bold mb-6">
                         <i class="fa-solid fa-tags"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-2">No Hidden Fees</h3>
-                    <p class="text-steel-600 text-sm leading-relaxed">
-                        Honest, straightforward domain pricing. What you see is what you pay—no forced add-ons or unexpected renewal spikes.
+                    <h3 class="text-2xl font-bold mb-3">Honest Pricing</h3>
+                    <p class="text-sp-blue-dark text-base leading-relaxed opacity-90">
+                        Straightforward domain pricing. What you see is what you pay—no forced add-ons or unexpected renewal spikes. Simple and fair.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="bg-white border-t border-b border-steel-100 py-16 px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-2">Need a Hand?</h2>
-                <p class="text-steel-600 mb-8">Whether you have purchasing questions or technical inquiries, our team is standing by.</p>
+        <section class="bg-sp-blue-pale border-t border-b border-sp-blue-pale py-20 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <h2 class="text-4xl font-extrabold mb-4 text-sp-blue-dark tracking-tight">Need Assistance?</h2>
+                <p class="text-xl text-sp-blue-dark mb-12 opacity-90 max-w-2xl mx-auto">Whether you have purchasing questions or technical inquiries, our small town team is standing by.</p>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto font-bold">
                     <!-- Sales -->
-                    <div class="p-6 bg-steel-50 rounded-lg">
-                        <i class="fa-solid fa-comments text-2xl text-plow-orange mb-2"></i>
-                        <h4 class="font-bold text-steel-800">Sales Inquiries</h4>
-                        <a href="mailto:sales@steelplow.net" class="text-sm text-steel-600 hover:text-plow-orange break-words mt-1 block font-medium">
+                    <div class="p-8 bg-white rounded-2xl shadow border border-sp-blue-pale">
+                        <i class="fa-solid fa-comments text-3xl text-sp-gold mb-3"></i>
+                        <h4 class="text-xl text-sp-blue-dark mb-1">Sales Inquiries</h4>
+                        <a href="mailto:sales@steelplow.net" class="text-sp-blue-medium hover:text-sp-blue-dark break-words block font-extrabold text-lg">
                             sales@steelplow.net
                         </a>
                     </div>
                     
                     <!-- Support -->
-                    <div class="p-6 bg-steel-50 rounded-lg">
-                        <i class="fa-solid fa-life-ring text-2xl text-plow-orange mb-2"></i>
-                        <h4 class="font-bold text-steel-800">Technical Support</h4>
-                        <a href="mailto:support@steelplow.net" class="text-sm text-steel-600 hover:text-plow-orange break-words mt-1 block font-medium">
+                    <div class="p-8 bg-white rounded-2xl shadow border border-sp-blue-pale">
+                        <i class="fa-solid fa-life-ring text-3xl text-sp-gold mb-3"></i>
+                        <h4 class="text-xl text-sp-blue-dark mb-1">Technical Support</h4>
+                        <a href="mailto:support@steelplow.net" class="text-sp-blue-medium hover:text-sp-blue-dark break-words block font-extrabold text-lg">
                             support@steelplow.net
                         </a>
                     </div>
 
                     <!-- Phone -->
-                    <div class="p-6 bg-steel-50 rounded-lg">
-                        <i class="fa-solid fa-phone-volume text-2xl text-plow-orange mb-2"></i>
-                        <h4 class="font-bold text-steel-800">Call Us</h4>
-                        <a href="tel:816-319-8559" class="text-sm text-steel-600 hover:text-plow-orange break-words mt-1 block font-medium">
+                    <div class="p-8 bg-white rounded-2xl shadow border border-sp-blue-pale">
+                        <i class="fa-solid fa-phone-volume text-3xl text-sp-gold mb-3"></i>
+                        <h4 class="text-xl text-sp-blue-dark mb-1">Call Us</h4>
+                        <a href="tel:816-319-8559" class="text-sp-blue-medium hover:text-sp-blue-dark break-words block font-extrabold text-lg">
                             816-319-8559
                         </a>
                     </div>
@@ -175,16 +172,20 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-steel-900 text-steel-400 text-sm py-12 px-4 border-t border-steel-800">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="text-center md:text-left">
-                <p class="font-semibold text-white mb-1">SteelPlow Domains</p>
-                <p class="text-xs">&copy; 2026 SteelPlow Domains. All rights reserved.</p>
+    <footer class="bg-sp-blue-dark text-sp-blue-pale text-base py-16 px-6 border-t-8 border-sp-gold">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left flex flex-col md:flex-row items-center gap-4">
+                 <!-- Small footer logo -->
+                 <img src="splogo-removebg-preview.png" alt="" class="h-16 w-auto object-contain opacity-80" aria-hidden="true">
+                 <div>
+                    <p class="font-extrabold text-white text-lg mb-1">SteelPlow Domains</p>
+                    <p class="text-sm">"Your Small Town Domain Registrar." &copy; 2026. All rights reserved.</p>
+                 </div>
             </div>
             
-            <div class="flex gap-6">
+            <div class="flex gap-8 font-bold">
                 <a href="https://www.steelplow.net" class="hover:text-white transition-colors">Main Site</a>
-                <a href="https://buy.steelplow.net" class="hover:text-white transition-colors">Manage Domains</a>
+                <a href="https://buy.steelplow.net/site/availability/" class="hover:text-white transition-colors">Search Portal</a>
                 <a href="https://www.facebook.com/steelplowdomains" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook</a>
             </div>
         </div>
@@ -197,10 +198,10 @@
             const rawQuery = document.getElementById('domainInput').value.trim();
             
             if (rawQuery) {
-                // Cleans up 'http://', 'https://', or 'www.' if the user accidentally typed them
+                // Cleans up any 'http://', 'https://', or 'www.' the user might have entered
                 let cleanDomain = rawQuery.toLowerCase().replace(/^(https?:\/\/)?(www\.)?/, "");
                 
-                // Construct the exact availability URL format
+                // Construct the exact availability URL format based on previous instructions
                 const destinationUrl = `https://buy.steelplow.net/site/availability/${encodeURIComponent(cleanDomain)}`;
                 
                 // Redirect user directly to the search result page
