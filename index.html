@@ -197,14 +197,13 @@
             const rawQuery = document.getElementById('domainInput').value.trim();
             
             if (rawQuery) {
-                // Cleans up any potential 'http://', 'https://', or 'www.' the user might type
-                let cleanDomain = rawQuery.replace(/^(https?:\/\/)?(www\.)?/, "");
+                // Cleans up 'http://', 'https://', or 'www.' if the user accidentally typed them
+                let cleanDomain = rawQuery.toLowerCase().replace(/^(https?:\/\/)?(www\.)?/, "");
                 
-                // Construct the destination URL. Most OpenSRS buy portals accept domains via query params:
-                // If buy.steelplow.net uses a custom search handler, adjust the parameter below (e.g. '?search=' or '?domain=')
-                const destinationUrl = `https://buy.steelplow.net/register.cgi?domain=${encodeURIComponent(cleanDomain)}`;
+                // Construct the exact availability URL format
+                const destinationUrl = `https://buy.steelplow.net/site/availability/${encodeURIComponent(cleanDomain)}`;
                 
-                // Redirect user to store
+                // Redirect user directly to the search result page
                 window.location.href = destinationUrl;
             }
         });
