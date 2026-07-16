@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteelPlow Domains | Premium Domain Registration & Hosting</title>
+    <!-- Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        steel: {
+                            50: '#f4f6f8',
+                            100: '#e7ebf0',
+                            600: '#4a5568',
+                            700: '#2d3748',
+                            800: '#1a202c',
+                            900: '#111827',
+                        },
+                        plow: {
+                            orange: '#dd6b20', /* A subtle rust/plow orange accent */
+                            orangeHover: '#c05621'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-steel-50 text-steel-900 flex flex-col min-screen justify-between min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white border-b border-steel-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Logo & Brand -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="splogo.png" alt="SteelPlow Domains Logo" class="h-12 w-auto object-contain" onerror="this.style.display='none'; document.getElementById('text-logo').style.display='block';">
+                <!-- Fallback text logo if splogo.png isn't found -->
+                <span id="text-logo" class="hidden text-2xl font-black tracking-tight text-steel-800">
+                    Steel<span class="text-plow-orange">Plow</span> Domains
+                </span>
+            </a>
+
+            <!-- Contact & Social Header Links -->
+            <div class="flex items-center gap-6 text-sm font-medium text-steel-600">
+                <a href="tel:816-319-8559" class="hover:text-plow-orange transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 816-319-8559
+                </a>
+                <a href="https://www.facebook.com/steelplowdomains" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 text-lg transition-colors" title="Follow us on Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow">
+        
+        <!-- Hero & Domain Search Section -->
+        <section class="bg-gradient-to-br from-steel-900 via-steel-800 to-steel-700 text-white py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+                    Carve Out Your Space Online
+                </h1>
+                <p class="text-lg md:text-xl text-steel-100 mb-8 max-w-2xl mx-auto">
+                    Search and secure premium domain names instantly through our trusted OpenSRS reseller portal.
+                </p>
+
+                <!-- Search Form -->
+                <form id="domainSearchForm" class="bg-white p-2 rounded-lg shadow-xl flex flex-col md:flex-row gap-2 max-w-3xl mx-auto">
+                    <div class="flex-grow relative flex items-center">
+                        <i class="fa-solid fa-globe text-steel-400 absolute left-4 text-lg"></i>
+                        <input 
+                            type="text" 
+                            id="domainInput"
+                            placeholder="Enter your ideal domain (e.g., mybusiness.com)..." 
+                            class="w-full pl-11 pr-4 py-3 rounded-md text-steel-900 placeholder-steel-400 focus:outline-none focus:ring-2 focus:ring-plow-orange"
+                            required
+                        >
+                    </div>
+                    <button 
+                        type="submit" 
+                        class="bg-plow-orange hover:bg-plow-orangeHover text-white font-bold px-8 py-3 rounded-md transition-colors flex items-center justify-center gap-2"
+                    >
+                        <span>Search Domain</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </form>
+                
+                <p class="text-xs text-steel-300 mt-3">
+                    You will be securely redirected to our secure purchasing portal at buy.steelplow.net.
+                </p>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="max-w-6xl mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-steel-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-steel-100 text-plow-orange flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Trusted OpenSRS Partner</h3>
+                    <p class="text-steel-600 text-sm leading-relaxed">
+                        As an official reseller, we provide world-class registry infrastructure, security, and stability for your web assets.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-steel-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-steel-100 text-plow-orange flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Dedicated Support</h3>
+                    <p class="text-steel-600 text-sm leading-relaxed">
+                        Get direct, personalized assistance. We are here to help you manage, transfer, and configure your domains worry-free.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-steel-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-steel-100 text-plow-orange flex items-center justify-center text-xl font-bold mb-4">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">No Hidden Fees</h3>
+                    <p class="text-steel-600 text-sm leading-relaxed">
+                        Honest, straightforward domain pricing. What you see is what you pay—no forced add-ons or unexpected renewal spikes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-white border-t border-b border-steel-100 py-16 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-2">Need a Hand?</h2>
+                <p class="text-steel-600 mb-8">Whether you have purchasing questions or technical inquiries, our team is standing by.</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                    <!-- Sales -->
+                    <div class="p-6 bg-steel-50 rounded-lg">
+                        <i class="fa-solid fa-comments text-2xl text-plow-orange mb-2"></i>
+                        <h4 class="font-bold text-steel-800">Sales Inquiries</h4>
+                        <a href="mailto:sales@steelplow.net" class="text-sm text-steel-600 hover:text-plow-orange break-words mt-1 block font-medium">
+                            sales@steelplow.net
+                        </a>
+                    </div>
+                    
+                    <!-- Support -->
+                    <div class="p-6 bg-steel-50 rounded-lg">
+                        <i class="fa-solid fa-life-ring text-2xl text-plow-orange mb-2"></i>
+                        <h4 class="font-bold text-steel-800">Technical Support</h4>
+                        <a href="mailto:support@steelplow.net" class="text-sm text-steel-600 hover:text-plow-orange break-words mt-1 block font-medium">
+                            support@steelplow.net
+                        </a>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="p-6 bg-steel-50 rounded-lg">
+                        <i class="fa-solid fa-phone-volume text-2xl text-plow-orange mb-2"></i>
+                        <h4 class="font-bold text-steel-800">Call Us</h4>
+                        <a href="tel:816-319-8559" class="text-sm text-steel-600 hover:text-plow-orange break-words mt-1 block font-medium">
+                            816-319-8559
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-steel-900 text-steel-400 text-sm py-12 px-4 border-t border-steel-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-center md:text-left">
+                <p class="font-semibold text-white mb-1">SteelPlow Domains</p>
+                <p class="text-xs">&copy; 2026 SteelPlow Domains. All rights reserved.</p>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="https://www.steelplow.net" class="hover:text-white transition-colors">Main Site</a>
+                <a href="https://buy.steelplow.net" class="hover:text-white transition-colors">Manage Domains</a>
+                <a href="https://www.facebook.com/steelplowdomains" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to Handle the OpenSRS Redirect -->
+    <script>
+        document.getElementById('domainSearchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const rawQuery = document.getElementById('domainInput').value.trim();
+            
+            if (rawQuery) {
+                // Cleans up any potential 'http://', 'https://', or 'www.' the user might type
+                let cleanDomain = rawQuery.replace(/^(https?:\/\/)?(www\.)?/, "");
+                
+                // Construct the destination URL. Most OpenSRS buy portals accept domains via query params:
+                // If buy.steelplow.net uses a custom search handler, adjust the parameter below (e.g. '?search=' or '?domain=')
+                const destinationUrl = `https://buy.steelplow.net/register.cgi?domain=${encodeURIComponent(cleanDomain)}`;
+                
+                // Redirect user to store
+                window.location.href = destinationUrl;
+            }
+        });
+    </script>
+</body>
+</html>
